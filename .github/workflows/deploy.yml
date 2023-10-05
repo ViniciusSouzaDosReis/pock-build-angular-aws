@@ -34,4 +34,4 @@ jobs:
       
       - name: Deploy to S3
         if: success()
-        run: aws s3 sync ./dist/web-site-teste s3://www.pock-angular.vs
+        run: aws s3 sync ./web-site-teste/dist/web-site-teste s3://www.pock-angular.vs
