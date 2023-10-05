@@ -30,7 +30,7 @@ jobs:
         working-directory: ./web-site-teste
 
       - name: Build Angular app
-        run:
+        run: |
           npm run build:prod --prefix ./web-site-teste
           ls
 
