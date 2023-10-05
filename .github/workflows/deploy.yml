@@ -30,7 +30,7 @@ jobs:
         working-directory: ./web-site-teste
 
       - name: Build Angular app
-        run: npm run build:prod
+        run: npm run build:prod --prefix ./web-site-teste
       
       - name: Deploy to S3
         if: success()
