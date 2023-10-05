@@ -27,6 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./web-site-teste
 
       - name: Build Angular app
         run: npm run build:prod
