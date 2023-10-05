@@ -31,9 +31,7 @@ jobs:
 
       - name: Build Angular app
         run: npm run build:prod --prefix ./web-site-teste
-      
-      # -name: Check if dist folder exists
-      #   run: ls ./dist/web-site-teste
+        run: ls
 
       - name: Deploy to S3
         if: success()
